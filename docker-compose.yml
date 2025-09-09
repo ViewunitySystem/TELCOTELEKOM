@@ -1,0 +1,137 @@
+# ==========================================
+# PeerLink - Einfache Docker-Komposition
+# 11000% User-Freundlichkeitsgarantie!
+# ==========================================
+
+version: '3.8'
+
+services:
+  # ===== HAUPT-SERVER =====
+  peerlink-server:
+    image: node:20-alpine
+    container_name: peerlink-server
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    working_dir: /app
+    volumes:
+      - .:/app:ro
+      - peerlink_logs:/app/logs
+      - peerlink_data:/app/data
+      - peerlink_monitoring:/app/monitoring-data.json
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+    command: >
+      sh -c "
+      echo '🚀 Starte PeerLink Server...';
+      node server.js
+      "
+    networks:
+      - peerlink-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.peerlink.rule=Host(`peerlink.local`)"
+      - "traefik.http.services.peerlink.loadbalancer.server.port=8080"
+
+  # ===== MONITORING & BACKUP =====
+  peerlink-monitor:
+    image: alpine:latest
+    container_name: peerlink-monitor
+    restart: unless-stopped
+    volumes:
+      - peerlink_logs:/logs:ro
+      - peerlink_data:/data:ro
+      - peerlink_monitoring:/monitoring:ro
+      - peerlink_backup:/backup
+    command: >
+      sh -c "
+      echo '📊 PeerLink Monitoring & Backup Service';
+      echo '💾 Automatische Backups alle 6 Stunden';
+      while true; do
+        TIMESTAMP=$(date +%Y%m%d_%H%M%S);
+        echo \"📦 Erstelle Backup: backup_$TIMESTAMP.tar.gz\";
+
+        # Backup erstellen
+        cd / && tar -czf /backup/peerlink_backup_$TIMESTAMP.tar.gz \
+          -C /logs . \
+          -C /data . \
+          -C /monitoring monitoring-data.json 2>/dev/null || true;
+
+        # Alte Backups löschen (>7 Tage)
+        find /backup -name 'peerlink_backup_*.tar.gz' -mtime +7 -delete 2>/dev/null || true;
+
+        # Backup-Info anzeigen
+        echo \"✅ Backup erstellt: $(ls -lh /backup/peerlink_backup_$TIMESTAMP.tar.gz | awk '{print $5}')\";
+
+        # Backup-Übersicht
+        echo \"📂 Backup-Übersicht:\";
+        ls -la /backup/ | grep peerlink_backup | tail -5;
+
+        sleep 21600; # 6 Stunden warten
+      done
+      "
+    networks:
+      - peerlink-network
+    depends_on:
+      - peerlink-server
+
+  # ===== TRAEFIK REVERSE PROXY =====
+  traefik:
+    image: traefik:v3.0
+    container_name: peerlink-traefik
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8081:8080"  # Traefik Dashboard
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./traefik.yml:/etc/traefik/traefik.yml:ro
+    networks:
+      - peerlink-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.peerlink.local`)"
+      - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+
+# ===== VOLUMES =====
+volumes:
+  peerlink_logs:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./logs
+
+  peerlink_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data
+
+  peerlink_monitoring:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./monitoring-data.json
+
+  peerlink_backup:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./backup
+
+# ===== NETWORKS =====
+networks:
+  peerlink-network:
+    driver: bridge
+    name: peerlink-network

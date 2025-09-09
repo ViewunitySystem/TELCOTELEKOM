@@ -1,0 +1,314 @@
+🚀 PeerLink Signaling-Server läuft auf Port 8080
+📊 Monitoring verfügbar unter: http://localhost:8080/monitoring
+💚 Health Check unter: http://localhost:8080/health
+📝 Logs werden in monitoring-data.json gespeichert
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-52-24-437Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-53-24-460Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-54-24-473Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-55-24-484Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-56-24-490Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-57-24-503Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-58-24-512Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T23-59-24-520Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-00-24-525Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.8%
+⚠️ Hoher Speicherverbrauch: 85.9%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-01-24-534Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 87.0%
+⚠️ Hoher Speicherverbrauch: 87.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-02-24-539Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 88.1%
+⚠️ Hoher Speicherverbrauch: 88.5%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-03-24-540Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.3%
+⚠️ Hoher Speicherverbrauch: 91.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-04-24-552Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-05-24-552Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-06-24-559Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-07-24-565Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-08-24-571Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-09-24-582Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.4%
+⚠️ Hoher Speicherverbrauch: 85.5%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-10-24-583Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 86.7%
+⚠️ Hoher Speicherverbrauch: 86.9%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-11-24-594Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 88.0%
+⚠️ Hoher Speicherverbrauch: 88.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-12-24-608Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 89.3%
+⚠️ Hoher Speicherverbrauch: 89.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-13-24-669Z.backup
+🧹 1 alte Backups gelöscht
+⚠️ Hoher Speicherverbrauch: 90.3%
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 90.7%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-14-24-633Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.9%
+⚠️ Hoher Speicherverbrauch: 92.0%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-15-24-646Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 93.2%
+⚠️ Hoher Speicherverbrauch: 93.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-16-24-647Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-17-24-649Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-18-24-659Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-19-24-669Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-20-24-673Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.7%
+⚠️ Hoher Speicherverbrauch: 85.8%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-21-24-687Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 87.2%
+⚠️ Hoher Speicherverbrauch: 87.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-22-24-693Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 88.8%
+⚠️ Hoher Speicherverbrauch: 89.0%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-23-24-695Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 90.4%
+⚠️ Hoher Speicherverbrauch: 90.5%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-24-24-705Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 92.0%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-25-24-717Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-26-24-717Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-27-24-730Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-28-24-733Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.7%
+⚠️ Hoher Speicherverbrauch: 85.9%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-29-24-735Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 87.5%
+⚠️ Hoher Speicherverbrauch: 87.7%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-30-24-736Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 89.3%
+⚠️ Hoher Speicherverbrauch: 89.5%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-31-24-752Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.2%
+⚠️ Hoher Speicherverbrauch: 91.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-32-24-753Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-33-24-764Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-34-24-768Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-35-24-766Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.8%
+⚠️ Hoher Speicherverbrauch: 86.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-36-24-770Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 87.9%
+⚠️ Hoher Speicherverbrauch: 88.2%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-37-24-774Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 89.9%
+⚠️ Hoher Speicherverbrauch: 90.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-38-24-780Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.9%
+⚠️ Hoher Speicherverbrauch: 92.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-39-24-782Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-40-24-789Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-41-24-802Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-42-24-809Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 86.9%
+⚠️ Hoher Speicherverbrauch: 87.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-43-24-817Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 88.9%
+⚠️ Hoher Speicherverbrauch: 89.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-44-24-826Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.2%
+⚠️ Hoher Speicherverbrauch: 91.5%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-45-24-829Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-46-24-842Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-47-24-852Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-48-24-866Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 87.0%
+⚠️ Hoher Speicherverbrauch: 87.3%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-49-24-875Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 89.4%
+⚠️ Hoher Speicherverbrauch: 89.6%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-50-24-883Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.8%
+⚠️ Hoher Speicherverbrauch: 92.0%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-51-24-897Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-52-24-900Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-53-24-913Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 86.1%
+⚠️ Hoher Speicherverbrauch: 86.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-54-24-913Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 88.6%
+⚠️ Hoher Speicherverbrauch: 88.9%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-55-24-923Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 91.1%
+⚠️ Hoher Speicherverbrauch: 91.4%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-56-24-937Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-57-24-952Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-58-24-963Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 85.5%
+⚠️ Hoher Speicherverbrauch: 85.8%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T00-59-24-974Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 88.3%
+⚠️ Hoher Speicherverbrauch: 88.6%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-00-24-987Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 90.8%
+⚠️ Hoher Speicherverbrauch: 91.2%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-01-24-987Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 93.4%
+⚠️ Hoher Speicherverbrauch: 93.7%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-02-24-998Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-03-25-005Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-04-25-007Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 87.7%
+⚠️ Hoher Speicherverbrauch: 88.1%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-05-25-018Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 90.7%
+⚠️ Hoher Speicherverbrauch: 91.0%
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-06-25-018Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-07-25-033Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-09T01-08-25-040Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+⚠️ Hoher Speicherverbrauch: 86.7%

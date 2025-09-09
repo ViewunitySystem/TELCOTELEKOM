@@ -1,0 +1,10 @@
+🚀 PeerLink Signaling-Server läuft auf Port 8080
+📊 Monitoring verfügbar unter: http://localhost:8080/monitoring
+💚 Health Check unter: http://localhost:8080/health
+📝 Logs werden in monitoring-data.json gespeichert
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T22-34-56-792Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json
+📦 Backup erstellt: backups\monitoring-data.json.2025-09-08T22-35-56-805Z.backup
+🧹 1 alte Backups gelöscht
+✅ Daten erfolgreich gespeichert: monitoring-data.json

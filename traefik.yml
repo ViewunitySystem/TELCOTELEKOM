@@ -1,0 +1,27 @@
+# Traefik Configuration für PeerLink
+# Einfach und automatisch konfiguriert!
+
+global:
+  checkNewVersion: true
+  sendAnonymousUsage: false
+
+api:
+  dashboard: true
+  insecure: true
+
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false
+    watch: true
+
+log:
+  level: INFO
+
+accessLog: {}

@@ -1,0 +1,921 @@
+{
+  "serverStartTime": "2025-09-09T01:08:25.040Z",
+  "totalConnections": 0,
+  "activeRooms": 0,
+  "logs": [],
+  "systemHealth": [
+    {
+      "timestamp": "2025-09-08T23:52:54.404Z",
+      "memoryPercent": 75.83375061314584,
+      "heapUsed": 4749304,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:53:24.417Z",
+      "memoryPercent": 75.90119665631131,
+      "heapUsed": 4753528,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:53:54.425Z",
+      "memoryPercent": 79.2976414323087,
+      "heapUsed": 4966240,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:54:24.440Z",
+      "memoryPercent": 79.32689359875735,
+      "heapUsed": 4968072,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:54:54.448Z",
+      "memoryPercent": 80.15259667266187,
+      "heapUsed": 5019784,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:55:24.454Z",
+      "memoryPercent": 80.18542552321779,
+      "heapUsed": 5021840,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:55:54.456Z",
+      "memoryPercent": 81.03169453073905,
+      "heapUsed": 5074840,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:56:24.458Z",
+      "memoryPercent": 81.06810006540222,
+      "heapUsed": 5077120,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:56:54.468Z",
+      "memoryPercent": 81.94694244604317,
+      "heapUsed": 5132160,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:57:24.471Z",
+      "memoryPercent": 81.9869246648136,
+      "heapUsed": 5134664,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:57:54.539Z",
+      "memoryPercent": 82.8731758911053,
+      "heapUsed": 5190168,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:58:24.544Z",
+      "memoryPercent": 83.79723777795945,
+      "heapUsed": 5248040,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:58:54.555Z",
+      "memoryPercent": 83.84284050032701,
+      "heapUsed": 5250896,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:59:24.550Z",
+      "memoryPercent": 84.78286972694572,
+      "heapUsed": 5309768,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-08T23:59:54.558Z",
+      "memoryPercent": 84.83690320470896,
+      "heapUsed": 5313152,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:00:24.571Z",
+      "memoryPercent": 85.78702379005885,
+      "heapUsed": 5372656,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:00:54.591Z",
+      "memoryPercent": 85.90990843688685,
+      "heapUsed": 5380352,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:01:24.596Z",
+      "memoryPercent": 86.95072351209942,
+      "heapUsed": 5445536,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:01:54.603Z",
+      "memoryPercent": 87.05380865761936,
+      "heapUsed": 5451992,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:02:24.614Z",
+      "memoryPercent": 88.10139388489209,
+      "heapUsed": 5517600,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:02:54.631Z",
+      "memoryPercent": 88.53123467135383,
+      "heapUsed": 5544520,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:03:24.633Z",
+      "memoryPercent": 91.33524829780936,
+      "heapUsed": 6318704,
+      "heapTotal": 6918144
+    },
+    {
+      "timestamp": "2025-09-09T00:03:54.634Z",
+      "memoryPercent": 91.42984014209591,
+      "heapUsed": 6325248,
+      "heapTotal": 6918144
+    },
+    {
+      "timestamp": "2025-09-09T00:04:24.644Z",
+      "memoryPercent": 79.00448107423152,
+      "heapUsed": 4947880,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:04:54.646Z",
+      "memoryPercent": 79.07754762099411,
+      "heapUsed": 4952456,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:05:24.661Z",
+      "memoryPercent": 80.18721386527142,
+      "heapUsed": 5021952,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:05:54.667Z",
+      "memoryPercent": 80.26385709614127,
+      "heapUsed": 5026752,
+      "heapTotal": 6262784
+    },
+    {
+      "timestamp": "2025-09-09T00:06:24.682Z",
+      "memoryPercent": 81.83998352165726,
+      "heapUsed": 5340000,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:06:54.688Z",
+      "memoryPercent": 81.9169805398619,
+      "heapUsed": 5345024,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:07:24.703Z",
+      "memoryPercent": 83.0113680947897,
+      "heapUsed": 5416432,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:07:54.706Z",
+      "memoryPercent": 83.09179810106717,
+      "heapUsed": 5421680,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:08:24.710Z",
+      "memoryPercent": 84.19758808066541,
+      "heapUsed": 5493832,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:08:54.713Z",
+      "memoryPercent": 84.2814510750157,
+      "heapUsed": 5499304,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:09:24.722Z",
+      "memoryPercent": 85.40465120841179,
+      "heapUsed": 5572592,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:09:54.737Z",
+      "memoryPercent": 85.52554143126177,
+      "heapUsed": 5580480,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:10:24.740Z",
+      "memoryPercent": 86.74793039861896,
+      "heapUsed": 5660240,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:10:54.741Z",
+      "memoryPercent": 86.86305810577527,
+      "heapUsed": 5667752,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:11:24.750Z",
+      "memoryPercent": 88.01188304300062,
+      "heapUsed": 5742712,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:11:54.759Z",
+      "memoryPercent": 88.13044373822976,
+      "heapUsed": 5750448,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:12:24.762Z",
+      "memoryPercent": 89.29054849340866,
+      "heapUsed": 5826144,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:12:54.765Z",
+      "memoryPercent": 89.4125421767106,
+      "heapUsed": 5834104,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:13:24.795Z",
+      "memoryPercent": 90.33478990112994,
+      "heapUsed": 5894280,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:13:54.800Z",
+      "memoryPercent": 90.7131542294413,
+      "heapUsed": 5918968,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:14:24.806Z",
+      "memoryPercent": 91.89569601381042,
+      "heapUsed": 5996128,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:14:54.817Z",
+      "memoryPercent": 92.04515360169492,
+      "heapUsed": 6005880,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:15:24.831Z",
+      "memoryPercent": 93.24927416823603,
+      "heapUsed": 6084448,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:15:54.842Z",
+      "memoryPercent": 93.39186577997489,
+      "heapUsed": 6093752,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:16:24.848Z",
+      "memoryPercent": 79.88931065599499,
+      "heapUsed": 5212720,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:16:54.860Z",
+      "memoryPercent": 80.01093651914627,
+      "heapUsed": 5220656,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:17:24.868Z",
+      "memoryPercent": 81.21321798493409,
+      "heapUsed": 5299104,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:17:54.868Z",
+      "memoryPercent": 81.3382768361582,
+      "heapUsed": 5307264,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:18:24.875Z",
+      "memoryPercent": 82.67800043157565,
+      "heapUsed": 5394680,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:18:54.886Z",
+      "memoryPercent": 82.80649227087257,
+      "heapUsed": 5403064,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:19:24.887Z",
+      "memoryPercent": 84.15774089767734,
+      "heapUsed": 5491232,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:19:54.893Z",
+      "memoryPercent": 84.28966572504709,
+      "heapUsed": 5499840,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:20:24.903Z",
+      "memoryPercent": 85.65194895637163,
+      "heapUsed": 5588728,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:20:54.913Z",
+      "memoryPercent": 85.81170550847457,
+      "heapUsed": 5599152,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:21:24.921Z",
+      "memoryPercent": 87.2165332705587,
+      "heapUsed": 5690816,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:21:54.929Z",
+      "memoryPercent": 87.37972281073446,
+      "heapUsed": 5701464,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:22:24.939Z",
+      "memoryPercent": 88.7888418079096,
+      "heapUsed": 5793408,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:22:54.945Z",
+      "memoryPercent": 88.9554643361582,
+      "heapUsed": 5804280,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:23:24.959Z",
+      "memoryPercent": 90.37917353264281,
+      "heapUsed": 5897176,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:23:54.973Z",
+      "memoryPercent": 90.54922904896422,
+      "heapUsed": 5908272,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:24:24.986Z",
+      "memoryPercent": 91.98103028876335,
+      "heapUsed": 6001696,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:24:54.993Z",
+      "memoryPercent": 79.31796335530446,
+      "heapUsed": 5175440,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:25:24.998Z",
+      "memoryPercent": 80.73640046296296,
+      "heapUsed": 5267992,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:25:54.999Z",
+      "memoryPercent": 80.88892321876962,
+      "heapUsed": 5277944,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:26:25.012Z",
+      "memoryPercent": 82.31851753766477,
+      "heapUsed": 5371224,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:26:55.013Z",
+      "memoryPercent": 82.47447328154426,
+      "heapUsed": 5381400,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:27:25.025Z",
+      "memoryPercent": 83.95691109541745,
+      "heapUsed": 5478128,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:27:55.028Z",
+      "memoryPercent": 84.11629982736974,
+      "heapUsed": 5488528,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:28:25.031Z",
+      "memoryPercent": 85.69473870056498,
+      "heapUsed": 5591520,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:28:55.038Z",
+      "memoryPercent": 85.88195915725048,
+      "heapUsed": 5603736,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:29:25.046Z",
+      "memoryPercent": 87.49656701192718,
+      "heapUsed": 5709088,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:29:55.051Z",
+      "memoryPercent": 87.68979519774011,
+      "heapUsed": 5721696,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:30:25.063Z",
+      "memoryPercent": 89.31506983678594,
+      "heapUsed": 5827744,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:30:55.075Z",
+      "memoryPercent": 89.50915626961708,
+      "heapUsed": 5840408,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:31:25.078Z",
+      "memoryPercent": 91.2423248195229,
+      "heapUsed": 5953496,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:31:55.085Z",
+      "memoryPercent": 91.43984424042686,
+      "heapUsed": 5966384,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:32:25.096Z",
+      "memoryPercent": 80.27478617388574,
+      "heapUsed": 5237872,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:32:55.110Z",
+      "memoryPercent": 80.45133984620213,
+      "heapUsed": 5249392,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:33:25.121Z",
+      "memoryPercent": 82.08605520244822,
+      "heapUsed": 5356056,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:33:55.127Z",
+      "memoryPercent": 82.26604186283741,
+      "heapUsed": 5367800,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:34:25.139Z",
+      "memoryPercent": 83.96414489171374,
+      "heapUsed": 5478600,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:34:55.152Z",
+      "memoryPercent": 84.16497469397363,
+      "heapUsed": 5491704,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:35:25.153Z",
+      "memoryPercent": 85.83953723320778,
+      "heapUsed": 5600968,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:35:55.157Z",
+      "memoryPercent": 86.06819876020087,
+      "heapUsed": 5615888,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:36:25.162Z",
+      "memoryPercent": 87.92642616133082,
+      "heapUsed": 5737136,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:36:55.167Z",
+      "memoryPercent": 88.15852067639673,
+      "heapUsed": 5752280,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:37:25.179Z",
+      "memoryPercent": 89.88004158819837,
+      "heapUsed": 5864608,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:37:55.184Z",
+      "memoryPercent": 90.1155690913371,
+      "heapUsed": 5879976,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:38:25.196Z",
+      "memoryPercent": 91.8887074309479,
+      "heapUsed": 5995672,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:38:55.209Z",
+      "memoryPercent": 92.12766792215945,
+      "heapUsed": 6011264,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:39:25.217Z",
+      "memoryPercent": 80.93612680477086,
+      "heapUsed": 5281024,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:39:55.231Z",
+      "memoryPercent": 81.15412154739485,
+      "heapUsed": 5295248,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:40:25.239Z",
+      "memoryPercent": 82.88496056967985,
+      "heapUsed": 5408184,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:40:55.242Z",
+      "memoryPercent": 83.10638830037664,
+      "heapUsed": 5422632,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:41:25.249Z",
+      "memoryPercent": 84.84924278091651,
+      "heapUsed": 5536352,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:41:55.263Z",
+      "memoryPercent": 85.07410349968613,
+      "heapUsed": 5551024,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:42:25.275Z",
+      "memoryPercent": 86.85177828782173,
+      "heapUsed": 5667016,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:42:55.289Z",
+      "memoryPercent": 87.10447073132454,
+      "heapUsed": 5683504,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:43:25.298Z",
+      "memoryPercent": 88.89342533741369,
+      "heapUsed": 5800232,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:43:55.308Z",
+      "memoryPercent": 89.14955076898933,
+      "heapUsed": 5816944,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:44:25.309Z",
+      "memoryPercent": 91.20161938951664,
+      "heapUsed": 5950840,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:44:55.320Z",
+      "memoryPercent": 91.46228126961708,
+      "heapUsed": 5967848,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:45:25.334Z",
+      "memoryPercent": 80.0078713512241,
+      "heapUsed": 5220456,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:45:55.347Z",
+      "memoryPercent": 80.246464022285,
+      "heapUsed": 5236024,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:46:25.358Z",
+      "memoryPercent": 82.29657093534212,
+      "heapUsed": 5369792,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:46:55.362Z",
+      "memoryPercent": 82.53859659447583,
+      "heapUsed": 5385584,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:47:25.364Z",
+      "memoryPercent": 84.66177711079725,
+      "heapUsed": 5524120,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:47:55.366Z",
+      "memoryPercent": 84.90723575800376,
+      "heapUsed": 5540136,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:48:25.383Z",
+      "memoryPercent": 86.97990230696799,
+      "heapUsed": 5675376,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:48:55.389Z",
+      "memoryPercent": 87.25319267890772,
+      "heapUsed": 5693208,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:49:25.402Z",
+      "memoryPercent": 89.36276384965474,
+      "heapUsed": 5830856,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:49:55.404Z",
+      "memoryPercent": 89.6394872096673,
+      "heapUsed": 5848912,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:50:25.414Z",
+      "memoryPercent": 91.7589895244821,
+      "heapUsed": 5987208,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:50:55.428Z",
+      "memoryPercent": 92.03914587256749,
+      "heapUsed": 6005488,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:51:25.442Z",
+      "memoryPercent": 81.33741858913999,
+      "heapUsed": 5307208,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:51:55.453Z",
+      "memoryPercent": 81.59660918863779,
+      "heapUsed": 5324120,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:52:25.457Z",
+      "memoryPercent": 83.72837217514125,
+      "heapUsed": 5463216,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:52:55.464Z",
+      "memoryPercent": 83.99099576271186,
+      "heapUsed": 5480352,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:53:25.470Z",
+      "memoryPercent": 86.1283986581921,
+      "heapUsed": 5619816,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:53:55.476Z",
+      "memoryPercent": 86.41885397049592,
+      "heapUsed": 5638768,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:54:25.485Z",
+      "memoryPercent": 88.62969828939109,
+      "heapUsed": 5783024,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:54:55.497Z",
+      "memoryPercent": 88.92358658976774,
+      "heapUsed": 5802200,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:55:25.496Z",
+      "memoryPercent": 91.10782525109855,
+      "heapUsed": 5944720,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:55:55.505Z",
+      "memoryPercent": 91.41176730225989,
+      "heapUsed": 5964552,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:56:25.511Z",
+      "memoryPercent": 80.538881042059,
+      "heapUsed": 5255104,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:56:55.516Z",
+      "memoryPercent": 80.8189147834275,
+      "heapUsed": 5273376,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:57:25.527Z",
+      "memoryPercent": 83.00499254551161,
+      "heapUsed": 5416016,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:57:55.530Z",
+      "memoryPercent": 83.28845927495291,
+      "heapUsed": 5434512,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:58:25.540Z",
+      "memoryPercent": 85.48606206842435,
+      "heapUsed": 5577904,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:58:55.548Z",
+      "memoryPercent": 85.79969005021971,
+      "heapUsed": 5598368,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:59:25.563Z",
+      "memoryPercent": 88.26616937382298,
+      "heapUsed": 5759304,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T00:59:55.569Z",
+      "memoryPercent": 88.58323034369114,
+      "heapUsed": 5779992,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:00:25.575Z",
+      "memoryPercent": 90.82975321720025,
+      "heapUsed": 5926576,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:00:55.589Z",
+      "memoryPercent": 91.15024717514125,
+      "heapUsed": 5947488,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:01:25.596Z",
+      "memoryPercent": 93.40915332705588,
+      "heapUsed": 6094880,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:01:55.597Z",
+      "memoryPercent": 93.73308027306967,
+      "heapUsed": 6116016,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:02:25.598Z",
+      "memoryPercent": 81.84120958882612,
+      "heapUsed": 5340080,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:02:55.608Z",
+      "memoryPercent": 82.14184125863152,
+      "heapUsed": 5359696,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:03:25.612Z",
+      "memoryPercent": 84.66533270558693,
+      "heapUsed": 5524352,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:03:55.616Z",
+      "memoryPercent": 84.99747430163214,
+      "heapUsed": 5546024,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:04:25.627Z",
+      "memoryPercent": 87.71394872096673,
+      "heapUsed": 5723272,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:04:55.631Z",
+      "memoryPercent": 88.07625156936597,
+      "heapUsed": 5746912,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:05:25.643Z",
+      "memoryPercent": 90.65896206057754,
+      "heapUsed": 5915432,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:05:55.656Z",
+      "memoryPercent": 91.02469789704959,
+      "heapUsed": 5939296,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:06:25.672Z",
+      "memoryPercent": 80.89235620684244,
+      "heapUsed": 5278168,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:06:55.674Z",
+      "memoryPercent": 81.23479676710609,
+      "heapUsed": 5300512,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:07:25.692Z",
+      "memoryPercent": 83.81321602322662,
+      "heapUsed": 5468752,
+      "heapTotal": 6524928
+    },
+    {
+      "timestamp": "2025-09-09T01:07:55.692Z",
+      "memoryPercent": 84.15908957156309,
+      "heapUsed": 5491320,
+      "heapTotal": 6524928
+    }
+  ],
+  "errorStats": {},
+  "metadata": {
+    "timestamp": "2025-09-09T01:08:25.043Z",
+    "version": "2.0.0",
+    "checksum": "21fe6fc9d8b99a3904b91360502215d618cd9b5b5deb6e8416042e7717a370aa",
+    "compressed": false
+  }
+}

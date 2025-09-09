@@ -1,0 +1,64 @@
+{
+  \"timestamp\": \"2025-09-08T02:55:28.997Z\",
+  \"testType\": \"Echter Verbindungs-Test\",
+  \"systemInfo\": {
+    \"hostname\": \"DESKTOP-U2AII26\",
+    \"os\": \"Microsoft Windows 11 Pro\",
+    \"osVersion\": \"10.0.26100\",
+    \"architecture\": \"AMD64\",
+    \"cpu\": \"Intel64 Family 6 Model 142 Stepping 12, GenuineIntel\",
+    \"memory\": \"31.81 GB\",
+    \"nodeVersion\": \"v20.18.1\",
+    \"npmVersion\": \"10.8.2\"
+  },
+  \"geographicalInfo\": {
+    \"country\": \"The Netherlands\",
+    \"countryCode\": \"NL\",
+    \"city\": \"Utrecht\",
+    \"region\": \"Utrecht\",
+    \"coordinates\": {
+      \"latitude\": 52.0963,
+      \"longitude\": 5.1193
+    },
+    \"timezone\": \"Europe/Amsterdam\",
+    \"isp\": \"Euronet Communications B.V.\",
+    \"ip\": \"85.148.131.232\"
+  },
+  \"networkMetrics\": {
+    \"latency\": \"4ms\",
+    \"packetLoss\": \"0%\",
+    \"serverResponseTime\": \"0.004s\",
+    \"httpStatus\": 200
+  },
+  \"serverStatus\": {
+    \"status\": \"healthy\",
+    \"uptime\": 2200,
+    \"activeConnections\": 0,
+    \"monitoringActive\": true
+  },
+  \"webrtcMetrics\": {
+    \"connectionTime\": \"0.8s\",
+    \"dataChannelLatency\": \"12ms\",
+    \"packetLoss\": \"0%\",
+    \"bandwidth\": {
+      \"upload\": \"2.4 Mbps\",
+      \"download\": \"8.1 Mbps\"
+    },
+    \"audioCodec\": \"Opus\",
+    \"videoCodec\": \"H.264\",
+    \"connectionPhases\": [
+      \"Signaling Server Connection\",
+      \"SDP Exchange\",
+      \"ICE Candidate Gathering\",
+      \"Media Stream Setup\",
+      \"DataChannel Establishment\"
+    ]
+  },
+  \"testResults\": {
+    \"overallStatus\": \"SUCCESS\",
+    \"connectionEstablished\": true,
+    \"mediaStreamsActive\": true,
+    \"dataChannelActive\": true,
+    \"monitoringDataLogged\": true
+  }
+}

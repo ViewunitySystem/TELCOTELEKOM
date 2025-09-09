@@ -1,0 +1,164 @@
+Alles klar — du willst **ein winziges, legales Tool** (keine komplizierten Einstellungen, überall lauffähig), mit dem Nutzer **frei wählen** können: **Text / Audio / Video** und **beliebig viele Teilnehmer**.
+Der zuverlässigste Weg dafür ist: **WebRTC** (direkt, Ende-zu-Ende verschlüsselt) + **kleiner Signalisierungsdienst** + **TURN** als Notnagel hinter NAT. „Nur per IP, ganz ohne irgendwas“ scheitert in der Praxis an NAT/Firewalls; mit dem folgenden Setup sieht es für den User trotzdem wie „einfach funktioniert“ aus.
+
+# Lösung: „PeerLink (leicht)“
+
+Ein **kleines PWA-Frontend** (läuft im Browser auf jedem Gerät; optional 5–10 MB Desktop-App via Tauri) + **Mini-Signaling** (unter 100 Zeilen) + **TURN** (ein Docker-Befehl).
+Bedienung für Nutzer: **Link öffnen → Modus wählen (Text/Audio/Video) → QR/Link teilen → verbunden.** Keine Konten, keine Ports, keine Handarbeit.
+
+## So funktioniert’s (kurz)
+
+* **Transport:** WebRTC (DTLS-SRTP für Audio/Video, DataChannels für Text).
+* **Erreichbarkeit:** STUN/TURN sorgt dafür, dass Peer-to-Peer klappt, auch hinter Routern.
+* **Sicherheit:** E2E auf Medienebene; optionale zusätzliche **Schlüssel/Passphrase** pro Raum.
+* **Skalierung:** Bis \~4–6 Leute im **Mesh** direkt. Für größere Gruppen optional ein schlanker **SFU** (z. B. mediasoup) – ein zusätzlicher Container.
+
+---
+
+# Kochrezept (einmalig einrichten)
+
+## 1) TURN in 1 Zeile (Docker)
+
+```bash
+docker run -d --name coturn --restart=always \
+  -p 3478:3478/udp -p 3478:3478/tcp -p 49160-49200:49160-49200/udp \
+  -e TURN_REALM=peertool.local \
+  -e TURN_USER=peeruser -e TURN_PASSWORD=peerpass \
+  instrumentisto/coturn -n --fingerprint --lt-cred-mech \
+  --realm=$TURN_REALM --user=$TURN_USER:$TURN_PASSWORD \
+  --min-port=49160 --max-port=49200
+```
+
+## 2) Mini-Signaling (WebSocket, \~60 Zeilen, Node.js)
+
+Speichert **nichts**, leitet nur SDP/ICE Nachrichten weiter.
+
+```js
+// server.js
+import { createServer } from "http";
+import { WebSocketServer } from "ws";
+const server = createServer();
+const wss = new WebSocketServer({ server });
+const rooms = new Map(); // roomId -> Set(ws)
+
+wss.on("connection", (ws) => {
+  let roomId;
+  ws.on("message", (raw) => {
+    const { type, room, payload } = JSON.parse(raw);
+    if (type === "join") {
+      roomId = room;
+      if (!rooms.has(roomId)) rooms.set(roomId, new Set());
+      rooms.get(roomId).add(ws);
+      return;
+    }
+    // broadcast to others in room
+    if (roomId && rooms.has(roomId)) {
+      for (const peer of rooms.get(roomId)) {
+        if (peer !== ws && peer.readyState === 1) {
+          peer.send(JSON.stringify({ type, payload }));
+        }
+      }
+    }
+  });
+  ws.on("close", () => {
+    if (roomId && rooms.has(roomId)) {
+      rooms.get(roomId).delete(ws);
+      if (!rooms.get(roomId).size) rooms.delete(roomId);
+    }
+  });
+});
+
+server.listen(8080, () => console.log("Signaling on :8080"));
+```
+
+Start:
+
+```bash
+node server.js
+```
+
+(Alternative: als **Cloudflare Worker** oder **Fly.io** deployen – kostet quasi nichts und bleibt winzig.)
+
+## 3) Ultraleichtes Frontend (ein einziges HTML – PWA-fähig)
+
+* Öffnet Kamera/Mikro nur im **Audio/Video-Modus**.
+* **Schaltflächen**: Text | Audio | Video | „Link kopieren“.
+* **Einladungen**: zufällige Raum-ID (oder QR).
+* **Konfiguration**: nur deine STUN/TURN-Daten + Signaling-URL.
+
+**Kern-Snippet (Browser-JS)** – passt in eine einzige Datei:
+
+```html
+<script>
+const ws = new WebSocket("wss://<dein-signaling-host>");
+const pc = new RTCPeerConnection({
+  iceServers: [
+    { urls: "stun:stun.l.google.com:19302" },
+    { urls: "turn:<dein-turn-host>:3478", username: "peeruser", credential: "peerpass" }
+  ]
+});
+const dc = pc.createDataChannel("chat");
+dc.onmessage = (e)=>appendChat(e.data);
+
+pc.onicecandidate = (e)=> e.candidate && ws.send(JSON.stringify({type:"ice", payload:e.candidate}));
+pc.ontrack = ({streams:[s]}) => { remoteVideo.srcObject = s; };
+
+let room = new URL(location).hash.slice(1) || crypto.randomUUID();
+location.hash = room;
+ws.onopen = ()=> ws.send(JSON.stringify({type:"join", room}));
+
+ws.onmessage = async (m)=>{
+  const {type, payload} = JSON.parse(m.data);
+  if (type==="offer") { await pc.setRemoteDescription(payload); await answer(); }
+  if (type==="answer"){ await pc.setRemoteDescription(payload); }
+  if (type==="ice")   { try { await pc.addIceCandidate(payload); } catch {}
+  }
+};
+
+async function start(mode){
+  if (mode!=="text"){
+    const constraints = mode==="audio" ? {audio:true} : {audio:true, video:true};
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    stream.getTracks().forEach(t=>pc.addTrack(t, stream));
+    localVideo.srcObject = stream;
+  }
+  const offer = await pc.createOffer(); await pc.setLocalDescription(offer);
+  ws.send(JSON.stringify({type:"offer", payload:offer}));
+}
+async function answer(){
+  const ans = await pc.createAnswer(); await pc.setLocalDescription(ans);
+  ws.send(JSON.stringify({type:"answer", payload:ans}));
+}
+function sendChat(){ dc.send(chatInput.value); chatInput.value=""; }
+</script>
+```
+
+> Dieses Snippet ist absichtlich minimal: eine Datei, **kein Build-Step**, läuft als **PWA**.
+
+---
+
+# Nutzer-Erlebnis (so sieht’s für User aus)
+
+1. **Link öffnen** (pwa.example/#ABC123) → Seite zeigt: „Text / Audio / Video“.
+2. **Modus tippen** → ggf. Kamera/Mikro erlauben.
+3. **„Link kopieren“ / QR** an beliebig viele Kontakte geben.
+4. Alle, die den Link öffnen, sind **im selben Raum**.
+5. Für große Gruppen (ab \~6 Video-Teilnehmern) aktivierst du optional den **SFU-Container**, sonst bleibt es P2P-Mesh.
+
+---
+
+# Recht & Datenschutz (EU, kurz)
+
+* **Legal:** WebRTC/VPN/VoIP privat zu nutzen ist legal.
+* **Einwilligung:** Aufzeichnen von Ton/Bild nur mit **vorheriger Zustimmung aller**.
+* **Datenschutz:** Wenn du den Signaling- oder TURN-Dienst betreibst, halte **Logs minimal** und informiere in einer kurzen Datenschutzerklärung.
+
+---
+
+# Optional: Große Runden ohne Ruckeln (SFU)
+
+Wenn ihr regelmäßig >6 Leute in Video habt: ein einzelner **mediasoup**- oder **Jitsi-SFU**-Container. Das Frontend schickt Streams dann an den SFU statt an jeden Peer einzeln. Für Benutzer bleibt alles identisch.
+
+---
+
+Möchtest du, dass ich dir daraus **eine einzige HTML-Datei** (PWA) + eine **konfigurierbare `config.json`** baue (mit deinen TURN/Signaling-Werten), damit du sie direkt auf einen beliebigen Webspace legen kannst?

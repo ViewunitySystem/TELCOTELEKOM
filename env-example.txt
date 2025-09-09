@@ -1,0 +1,111 @@
+# ==========================================
+# PeerLink Enterprise Environment Variables
+# Für Millionen User skalierbar
+# ==========================================
+
+# Basic Configuration
+NODE_ENV=production
+ENABLE_CLUSTER=true
+WORKER_COUNT=4
+
+# Server Configuration
+PORT=8080
+MAX_CONNECTIONS=10000
+
+# Database Configuration
+REDIS_URL=redis://redis:6379
+MONGO_URL=mongodb://mongodb:27017/peerlink
+MONGO_ROOT_USER=peerlink_admin
+MONGO_ROOT_PASSWORD=secure_password_here
+
+# Security Configuration
+JWT_SECRET=your-super-secure-jwt-secret-here-at-least-64-characters-long
+TURN_PASSWORD=secure_turn_password_here
+TURN_SERVERS=["turn:your-domain.com:3478", "turn:backup-domain.com:3478"]
+
+# Cluster Configuration
+NODE_ID=1
+CLUSTER_SIZE=2
+
+# Monitoring Configuration
+MONITORING_ENABLED=true
+METRICS_ENABLED=true
+LOG_LEVEL=info
+
+# CDN Configuration (für globale Verteilung)
+CDN_ENABLED=true
+CDN_URL=https://cdn.peerlink.global
+CDN_API_KEY=your-cdn-api-key
+
+# Email Configuration (für Benachrichtigungen)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+FROM_EMAIL=noreply@peerlink.global
+
+# Backup Configuration
+BACKUP_ENABLED=true
+BACKUP_RETENTION_DAYS=30
+BACKUP_SCHEDULE=0 2 * * *  # Daily at 2 AM
+
+# Rate Limiting
+RATE_LIMIT_ENABLED=true
+RATE_LIMIT_REQUESTS_PER_MINUTE=100
+RATE_LIMIT_BURST=200
+
+# Security Features
+IP_BLACKLIST_ENABLED=true
+FIREWALL_ENABLED=true
+DDoS_PROTECTION_ENABLED=true
+
+# Performance Tuning
+CONNECTION_POOL_SIZE=100
+CACHE_TTL=3600
+SESSION_TIMEOUT=86400
+
+# Feature Flags
+ENABLE_VIDEO=true
+ENABLE_AUDIO=true
+ENABLE_SCREEN_SHARE=true
+ENABLE_FILE_TRANSFER=true
+ENABLE_CHAT=true
+ENABLE_RECORDING=false
+
+# Third-party Integrations
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
+DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/YOUR/DISCORD/WEBHOOK
+TELEGRAM_BOT_TOKEN=your-telegram-bot-token
+TELEGRAM_CHAT_ID=your-telegram-chat-id
+
+# Geographic Distribution
+PRIMARY_REGION=us-east-1
+BACKUP_REGIONS=us-west-2,eu-west-1,ap-southeast-1
+
+# Scaling Configuration
+AUTO_SCALING_ENABLED=true
+MIN_INSTANCES=2
+MAX_INSTANCES=50
+CPU_THRESHOLD=70
+MEMORY_THRESHOLD=80
+
+# Compliance
+GDPR_COMPLIANT=true
+DATA_RETENTION_DAYS=2555  # 7 years for GDPR
+AUDIT_LOG_ENABLED=true
+
+# Support Configuration
+SUPPORT_EMAIL=support@peerlink.global
+HELP_URL=https://help.peerlink.global
+STATUS_PAGE_URL=https://status.peerlink.global
+
+# Analytics
+ANALYTICS_ENABLED=true
+GOOGLE_ANALYTICS_ID=GA_MEASUREMENT_ID
+MIXPANEL_TOKEN=your-mixpanel-token
+
+# Emergency Configuration
+EMERGENCY_MODE_ENABLED=false
+MAINTENANCE_MODE_ENABLED=false
+MAINTENANCE_MESSAGE="PeerLink is currently undergoing maintenance. Please try again later."
+
