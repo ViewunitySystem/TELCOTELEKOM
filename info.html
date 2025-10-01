@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OnAirMulTiMedia – Info & GitHub Monitoring</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: system-ui, sans-serif; margin:0; background:#0b1020; color:#e5e7eb; }
+    header { background:#121a34; padding:16px; position:sticky; top:0; z-index:10; }
+    main { padding:16px; display:grid; gap:16px; max-width:1100px; margin:0 auto; }
+    .grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
+    .card { background:#111827; border:1px solid #1f2a52; border-radius:12px; padding:12px; }
+    .big { font-size:28px; font-weight:700; }
+    .muted { opacity:.8; font-size:12px; }
+    .hero { display:flex; align-items:center; gap:12px; }
+    a { color:#93c5fd; }
+    textarea, input, button { width:100%; padding:8px; border-radius:8px; border:1px solid #374151; background:#0b1020; color:#e5e7eb; }
+    button { cursor:pointer; }
+    .list { display:grid; gap:8px; }
+    .item { background:#0b1020; padding:8px; border-radius:8px; border:1px solid #1f2a52; }
+    .latin { font-style: italic; line-height:1.4; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div style="font-weight:800; font-size:20px;">TELCOTELEKOM – Info & Monitoring</div>
+      <a href="https://github.com/ViewunitySystem/TELCOTELEKOM" target="_blank">GitHub Repo ↗</a>
+      <a href="/blueprints.html" style="margin-left:12px;">Blueprints ↗</a>
+      <a href="/manifest.html" style="margin-left:12px;">Manifest ↗</a>
+      <a href="/regulatory.html" style="margin-left:12px;">Regulatory ↗</a>
+    </div>
+    <div class="muted">Live-Metriken werden regelmäßig synchronisiert (alle ~10 Minuten). Release-Downloads = Summe aller Release-Assets.</div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card"><div class="muted">Stars</div><div id="stars" class="big">–</div></div>
+      <div class="card"><div class="muted">Forks</div><div id="forks" class="big">–</div></div>
+      <div class="card"><div class="muted">Watcher</div><div id="watchers" class="big">–</div></div>
+      <div class="card"><div class="muted">Offene Issues</div><div id="issues" class="big">–</div></div>
+      <div class="card"><div class="muted">Releases</div><div id="releases" class="big">–</div></div>
+      <div class="card"><div class="muted">Release-Downloads</div><div id="downloads" class="big">–</div></div>
+      <div class="card"><div class="muted">Letztes Release</div><div id="latest" class="big" style="font-size:20px;">–</div></div>
+      <div class="card"><div class="muted">Stand</div><div id="ts" class="big" style="font-size:20px;">–</div></div>
+    </section>
+
+    <section class="card">
+      <h3>Community-Beiträge</h3>
+      <div class="muted">Reiche ergänzende Infos ein. Beiträge werden moderiert, bevor sie erscheinen.</div>
+      <div style="display:grid; gap:8px; margin-top:8px;">
+        <input id="user" placeholder="Dein Name oder @handle (optional)" />
+        <textarea id="text" rows="4" placeholder="Dein Beitrag (min. 5 Zeichen, max. 2000)"></textarea>
+        <button id="send">Beitrag einreichen</button>
+      </div>
+      <div id="msg" class="muted" style="margin-top:8px;"></div>
+      <hr/>
+      <div class="list" id="contribs"></div>
+    </section>
+
+    <section class="card">
+      <h3>Unterstützen</h3>
+      <div class="latin">
+        Donare, Tributum dare, Largiri, Conferre, Munus offerre, Pro bono publico, Gratia voluntaria, Ex animo, Spontanea voluntate, Munus tuum confer pro bono publico.<br/>
+        Spontanea voluntate, ex animo, largire auxilium.<br/>
+        Donare hic.: <a href="https://www.gofundme.com/f/magnitudo?utm_campaign=unknown&utm_medium=referral&utm_source=widget" target="_blank">GoFundMe – magnitudo ↗</a>
+      </div>
+      <p class="muted" style="margin-top:8px;">Freiwillige Zuwendung als Dankeschön – keine Gegenleistung geschuldet. Dies ist **keine Rechts- oder Steuerberatung**. Prüfe lokale Vorgaben (z. B. Spendenrecht/Steuer). Mindestbetragempfehlung: 5 €.</p>
+    </section>
+  </main>
+
+  <script src="/webtrit-swipe.js"></script>
+  <script>
+    function fmt(ts){ try { return new Date(ts).toLocaleString(); } catch { return '–'; } }
+    function esc(s){ const d=document.createElement('div'); d.textContent=String(s||''); return d.textContent; }
+
+    async function loadStats(){
+      const r = await fetch('/api/github/stats'); if (!r.ok) return;
+      const s = await r.json();
+      document.getElementById('stars').textContent = s.stars;
+      document.getElementById('forks').textContent = s.forks;
+      document.getElementById('watchers').textContent = s.watchers;
+      document.getElementById('issues').textContent = s.open_issues;
+      document.getElementById('releases').textContent = s.release_count;
+      document.getElementById('downloads').textContent = s.release_downloads;
+      document.getElementById('latest').textContent = s.latest_release_tag || '–';
+      document.getElementById('ts').textContent = fmt(s.ts);
+    }
+
+    async function loadContribs(){
+      const r = await fetch('/api/contribs'); if (!r.ok) return;
+      const list = await r.json();
+      const root = document.getElementById('contribs'); root.innerHTML = '';
+      list.forEach(c => {
+        const el = document.createElement('div'); el.className='item';
+        const u = c.user_id ? `<strong>${esc(c.user_id)}</strong>` : '<strong>anon</strong>';
+        el.innerHTML = `${u} <span class="muted">• ${fmt(c.created_at)}</span><br/>${esc(c.content)}`;
+        root.appendChild(el);
+      });
+    }
+
+    document.getElementById('send').onclick = async ()=>{
+      const user = document.getElementById('user').value;
+      const text = document.getElementById('text').value;
+      const r = await fetch('/api/contribs', { method:'POST', headers:{ 'Content-Type':'application/json' }, body: JSON.stringify({ user_id: user, content: text }) });
+      const msg = document.getElementById('msg');
+      if (r.ok){ msg.textContent = 'Danke! Dein Beitrag wurde übermittelt und erscheint nach Freigabe.'; document.getElementById('text').value=''; }
+      else { const j = await r.json().catch(()=>({error:'Fehler'})); msg.textContent = `Fehler: ${j.error}`; }
+    };
+
+    loadStats(); loadContribs();
+    setInterval(loadStats, 60_000);
+  </script>
+</body>
+</html>
+
